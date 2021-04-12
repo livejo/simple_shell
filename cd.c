@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
  *_cd - change directory builtin
- * @av: argument
- * Return: int ret
+ * @av: argument to work with
+ * Return: int
  */
 int _cd(char *av[])
 {
