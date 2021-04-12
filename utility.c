@@ -2,7 +2,9 @@
 #include <stdarg.h>
 /**
  * linecount - count lines
+ *
  * @increment: icnrementer
+ *
  * Return: count
  */
 int linecount(int increment)
@@ -15,7 +17,9 @@ int linecount(int increment)
 }
 /**
  * itos - converts integer to string
+ *
  * @digits: int
+ *
  * Return: a string
  */
 char *itos(int digits)
@@ -61,8 +65,10 @@ char *itos(int digits)
 }
 /**
  * printerr - printerrors
+ *
  * @str: string
  * null prints errno error with perror, otherwise print string as error
+ *
  * Return: 0
  */
 int printerr(char *str)
