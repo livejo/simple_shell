@@ -5,7 +5,9 @@
  * 0 none, 1 single quote, 2 double quote, 4 logic,
  * fd is fd we used to get input the first time
  * @buf: buffer
+ *
  * @fd: file descriptor
+ *
  * Return: return value of command, 2 for syntax errors,
  * or negative numbers for syscall errors
  */
