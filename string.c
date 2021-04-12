@@ -78,12 +78,12 @@ char *_strdup(char *str)
  */
 char *_strcat(char *dest, char *src)
 {
-	char *ptr = dest;
+	char *ptrs = dest;
 
-	while (*ptr)
-		ptr++;
+	while (*ptrs)
+		ptrs++;
 	while (*src)
-		*ptr++ = *src++;
-	*ptr = 0;
+		*ptrs++ = *src++;
+	*ptrs = 0;
 	return (dest);
 }
