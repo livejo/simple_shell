@@ -11,7 +11,7 @@ int linecount(int increment)
 {
 	static int count;
 
-	count += increment;
+	count = count + increment;
 
 	return (count);
 }
@@ -65,12 +65,11 @@ char *itos(int digits)
 }
 /**
  * printerr - printerrors
- *
  * @str: string
  * null prints errno error with perror, otherwise print string as error
- *
  * Return: 0
  */
+
 int printerr(char *str)
 {
 	char *pathname, *numstr;
@@ -90,12 +89,14 @@ int printerr(char *str)
 	free(numstr);
 	return (0);
 }
+
 /**
  * fprintstrs - simple string printer, va args should have a NULL last arg
  * @fd: file descriptor
  * @str: string
  * Return: 0
  */
+
 int fprintstrs(int fd, char *str, ...)
 {
 	va_list list;
@@ -119,9 +120,9 @@ int fprintstrs(int fd, char *str, ...)
  * @c: char
  * _strchr: locates character in a string and returns a pointer
  * to the first occurence of c in the string s
- *
  * Return: address of first occurence of c in s
  */
+
 char *_strchr(char *s, char c)
 {
 	int i;
