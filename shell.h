@@ -28,6 +28,13 @@ int parseargs(char **buf);
 /* from errhandl.c */
 int errhandl(int status);
 
+/* from string.c */
+size_t _strlen(char *str);
+char *_strcpy(char *dest, char *src);
+int _strcmp(char *, char *);
+char *_strdup(char *str);
+char *_strcat(char *a, char *b);
+
 /* from _getenv.c and getenviron.c */
 char ***getenviron(void);
 int setallenv(char **environ, char *add);
@@ -36,12 +43,6 @@ int _setenv(char *name, char *val);
 int _unsetenv(char *name);
 char **getallenv(void);
 
-/* from string.c */
-size_t _strlen(char *str);
-char *_strcpy(char *dest, char *src);
-int _strcmp(char *, char *);
-char *_strdup(char *str);
-char *_strcat(char *a, char *b);
 
 /* from utility.c */
 char *itos(int digits);
@@ -77,15 +78,17 @@ int _getline(char **lineptr, int fd);
 
 char *strtokqe(char *str, char *delim, int escflags);
 
+/*from history.c*/
+int sethist(char *cmd);
+int print_hist(void);
+int exit_hist(void);
+
 
 /* from _printenv.c */
 int _printenv(void);
 int _putchar(char c);
 
-/*from history.c*/
-int sethist(char *cmd);
-int print_hist(void);
-int exit_hist(void);
+
 
 /*from help.c*/
 int help(char *cmd);
