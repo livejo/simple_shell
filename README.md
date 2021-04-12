@@ -4,6 +4,7 @@ Run a shell designed to mimic sh. Execute commands and interact with the kernel.
 
 simplesh [script files]
 
+
 ## Current features
 
 * Run commands in $PATH
@@ -66,5 +67,6 @@ Hello simple shell!
 ```
 
 ## Authors
+
 Yosef kefale  
 Amanuel Sisay
