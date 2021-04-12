@@ -7,6 +7,7 @@
  * @name: name of the alias value
  * @val: value for the alias
  * @next: pointer to next node
+ *
  */
 
 typedef struct AliasData
