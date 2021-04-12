@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
  * help - help builtin command
- * @cmd: if command matches a builtin name, text file is sent to stdout
- * Return: 0 if sucess
+ * @cmd: the command line inserted
+ * Return: 0 if sucess (always)
  */
 int help(char *cmd)
 {
@@ -151,9 +151,9 @@ int help(char *cmd)
 		fd = close(fd);
 		return (0);
 	}
-	else if (!_strcmp(cmd, "unsetenv"))
+	else if (!_strcmp(cmd, "setenv"))
 	{
-		file = "help_unenv";
+		file = "help_setenv";
 		fd = open(file, O_RDWR);
 		s = malloc(256);
 		if (s == NULL)
@@ -170,9 +170,9 @@ int help(char *cmd)
 		fd = close(fd);
 		return (0);
 	}
-	else if (!_strcmp(cmd, "setenv"))
+	else if (!_strcmp(cmd, "unsetenv"))
 	{
-		file = "help_setenv";
+		file = "help_unenv";
 		fd = open(file, O_RDWR);
 		s = malloc(256);
 		if (s == NULL)
