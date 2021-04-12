@@ -2,8 +2,8 @@
 #include "shellvars.h"
 /**
  * initsvars - initialize vars
- * @ac: arguemnts int
- * @av: strings
+ * @ac: arguemnts intiger
+ * @av: string arguments
  * Return: int
  */
 int initsvars(int ac, char **av)
