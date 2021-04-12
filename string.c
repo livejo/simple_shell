@@ -30,12 +30,12 @@ int _strcmp(char *s1, char *s2)
  */
 size_t _strlen(char *str)
 {
-	size_t len = 0;
+	size_t length = 0;
 
 	while (*str++)
-		len++;
+		length++;
 
-	return (len);
+	return (length);
 }
 /**
  * _strcpy - string copy
