@@ -5,8 +5,7 @@
  * @s2: char pointer
  *
  * _strcmp: compares two strings at the same spot on each string
- * Returns positive, negative, or 0 if theyre the same
- * Return: int i
+ * Return: positive, negative, or 0 if theyre the same
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -24,9 +23,9 @@ int _strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 /**
- * _strlen - string length
+ * _strlen - counts the length of the string
  * @str: string
- * Return: length
+ * Return: length of the string
  */
 size_t _strlen(char *str)
 {
