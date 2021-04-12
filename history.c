@@ -2,6 +2,7 @@
 #include "history.h"
 /**
  * gethistory - gets the history list
+ *
  * Return: 0 uposon success
  */
 HistList **gethistory()
@@ -73,7 +74,6 @@ int print_hist(void)
 }
 /**
  * exit_hist - exit history and copy to file
- *
  * Return: int
  */
 int exit_hist(void)
@@ -88,9 +88,6 @@ int exit_hist(void)
 	HistList *hlist = *hlistroot;
 	HistList *ptr = hlist;
 
-/*
- *	file = tildeexpand(file);
- */
 	fd = open(file, O_CREAT | O_RDWR, 0600);
 	if (fd == -1)
 		return (-1);
@@ -107,7 +104,5 @@ int exit_hist(void)
 	}
 
 	close(fd);
-
-
 	return (1);
 }
