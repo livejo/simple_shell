@@ -1,21 +1,24 @@
 #include "shell.h"
 #include "history.h"
+
 /**
  * gethistory - gets the history list
- *
  * Return: 0 uposon success
  */
+
 HistList **gethistory()
 {
 	static HistList *hlist;
 
 	return (&hlist);
 }
+
 /**
  * sethist - set hist and value
  * @cmd: command
  * Return: 0 upon success
  */
+
 int sethist(char *cmd)
 {
 	HistList **hlistroot = gethistory();
@@ -44,11 +47,13 @@ int sethist(char *cmd)
 	ptr->next = new;
 	return (0);
 }
+
 /**
  * print_hist - prints all elements of listint
  *
  * Return: num of elements
  */
+
 int print_hist(void)
 {
 	HistList **hlistroot = gethistory();
@@ -72,10 +77,12 @@ int print_hist(void)
 	}
 	return (i);
 }
+
 /**
  * exit_hist - exit history and copy to file
  * Return: int
  */
+
 int exit_hist(void)
 {
 
