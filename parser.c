@@ -62,9 +62,7 @@ char *parsesetsvar(char *buf)
 
 /**
  * subsvars - substitutes in svars for $names
- *
  * @buf: buffer string that was input
- *
  * Return: processed buffer string
  */
 char *subsvars(char **buf)
