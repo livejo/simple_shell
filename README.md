@@ -31,7 +31,7 @@ Built-ins:
 * history
 
 ## Getting started
-To use this shell, we want to compile it and move it into a $PATH folder like /usr/local/bin. To compile the program, clone the project, navigate to the directory, and then type:
+To use this shell, we need to compile it and move it into a $PATH folder like /usr/local/bin. To compile the program, clone the project, navigate to the directory, and then type:
 ```
 gcc -o simplesh *.c
 ```
