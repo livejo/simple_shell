@@ -2,7 +2,9 @@
 /**
  * strtok - tokenizes a string
  * @str: string to tokenize
+ *
  * @delim: delimiters used to create tokens
+ *
  * Return: token
  */
 char *strtok(char *str, char *delim)
@@ -81,6 +83,7 @@ char *strtok(char *str, char *delim)
  * 1 = use \ to escape delims
  * 2 = single quote skips
  * 4 = double quote skips
+ *
  * Return: string
  */
 char *strtokqe(char *str, char *delim, int escflags)
