@@ -1,12 +1,14 @@
 #ifndef ALIASH
 #define ALIASH
+
 /**
  * struct AliasData - struct for alias function
- * @AliasData - name of struct
- * @name: name of alias value
- * @val: value for alias
- * @next: ptr to next node
+ * @AliasData - name of the struct
+ * @name: name of the alias value
+ * @val: value for the alias
+ * @next: pointer to next node
  */
+
 typedef struct AliasData
 {
 	char *name;
