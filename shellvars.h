@@ -3,10 +3,9 @@
 
 /**
  * struct ShellVar - shellvar list node
- *
- * @name: name of var
- * @val: value of var
- * @next: next var in list
+ * @name: name of variable
+ * @val: value of variable
+ * @next: next variable in the list
  */
 typedef struct ShellVar
 {
