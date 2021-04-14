@@ -19,7 +19,7 @@ int _atoi(char *s)
 	check_num = 0;
 	sum = 0;
 	i = 0;
-	
+
 	/* run a while loop */
 	while (s[i] != '\0')
 	{
@@ -31,10 +31,8 @@ int _atoi(char *s)
 			check_num++;
 		i++;
 	}
-	
 	i = i - 1;
 	x = 1;
-	
 	while (check_num > 0)
 	{
 		sum = sum + ((s[i] - '0') * x);
